@@ -1,0 +1,20 @@
+id: task_003
+title: "Advanced Prompt Engineering Challenge"
+description: |
+  Create a single, highly effective prompt that makes Grok (or any frontier model) solve a complex multi-step problem: 
+  Design a marketing strategy for a new eco-friendly candle brand targeting millennials.
+
+  The prompt must force the model to:
+  - Research market trends
+  - Create buyer personas
+  - Develop a full 90-day launch plan
+  - Include metrics for success
+
+difficulty: hard
+category: coding
+expected_output: One extremely effective prompt
+hints:
+  - Use role-playing, chain-of-thought, and constraints
+validation:
+  type: ai_judge
+time_limit_minutes: 15

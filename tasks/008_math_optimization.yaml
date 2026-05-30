@@ -1,0 +1,13 @@
+id: task_008
+title: "Traveling Salesman Problem - Practical Version"
+description: |
+  You have 8 cities in the US with given distances. Find a good (not necessarily perfect) route that visits each city exactly once and returns to the start, minimizing total distance.
+
+  (You can make up reasonable distances or ask for them.)
+
+difficulty: hard
+category: math
+expected_output: Route + total distance + explanation of method used
+validation:
+  type: ai_judge
+time_limit_minutes: 10

@@ -1,0 +1,21 @@
+id: task_001
+title: "Optimize Protein Expression in E. coli"
+description: |
+  You are a synthetic biologist. Design a strategy to improve the expression yield of a difficult-to-express human protein (GFP-fused membrane protein) in E. coli BL21(DE3).
+  The protein is currently expressed at very low levels (<0.5 mg/L).
+
+  Provide:
+  1. Recommended promoter and vector system
+  2. Key optimizations (codon usage, chaperone co-expression, temperature, inducer, etc.)
+  3. Expected improvement in yield
+
+difficulty: medium
+category: biology
+expected_output: A clear step-by-step optimization plan with reasoning
+hints:
+  - Consider rare codons and secondary structure
+  - Chaperones and lower temperature often help membrane proteins
+validation:
+  type: ai_judge
+  answer: "Any reasonable, scientifically sound plan focusing on codon optimization, strain choice, induction conditions, and chaperones will be accepted."
+time_limit_minutes: 15

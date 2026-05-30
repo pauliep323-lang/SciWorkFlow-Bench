@@ -1,0 +1,17 @@
+id: task_010
+title: "Business Strategy Challenge - Zero to $1M"
+description: |
+  You have $5,000 and 6 months. Create a realistic plan to build and launch a profitable micro-SaaS product that can reach $1M ARR.
+  
+  Include:
+  1. Product idea
+  2. Target customer
+  3. Go-to-market strategy
+  4. Key milestones and budget allocation
+
+difficulty: hard
+category: general
+expected_output: Comprehensive 6-month plan with reasoning
+validation:
+  type: ai_judge
+time_limit_minutes: 20

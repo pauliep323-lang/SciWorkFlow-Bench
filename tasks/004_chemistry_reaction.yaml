@@ -1,0 +1,11 @@
+id: task_004
+title: "Green Chemistry Synthesis Challenge"
+description: |
+  Propose a greener alternative synthesis route for Aspirin (acetylsalicylic acid) that reduces waste and uses safer reagents compared to the traditional method.
+
+difficulty: medium
+category: chemistry
+expected_output: Step-by-step greener synthesis with reasoning
+validation:
+  type: ai_judge
+time_limit_minutes: 10

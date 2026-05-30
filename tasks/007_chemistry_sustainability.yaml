@@ -1,0 +1,12 @@
+id: task_007
+title: "Sustainable Plastic Alternative"
+description: |
+  Propose a viable, scalable alternative to single-use plastic packaging using biological or green chemistry methods. 
+  Explain the material, production process, cost considerations, and environmental impact.
+
+difficulty: medium
+category: chemistry
+expected_output: Detailed proposal with pros/cons
+validation:
+  type: ai_judge
+time_limit_minutes: 12

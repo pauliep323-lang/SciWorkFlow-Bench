@@ -1,0 +1,19 @@
+id: task_005
+title: "CRISPR Design Challenge"
+description: |
+  Design a CRISPR-Cas9 experiment to knock out the PCSK9 gene in human liver cells to reduce LDL cholesterol levels.
+  Provide:
+  1. Guide RNA sequence design strategy
+  2. Delivery method
+  3. Potential off-target effects and how to minimize them
+  4. Expected experimental validation steps
+
+difficulty: hard
+category: biology
+expected_output: Detailed experimental design with reasoning
+hints:
+  - Consider PAM sequence requirements
+  - Base editing vs traditional Cas9
+validation:
+  type: ai_judge
+time_limit_minutes: 18

@@ -1,0 +1,17 @@
+id: task_006
+title: "REST API Design Challenge"
+description: |
+  Design a clean RESTful API for a task management system (like Todoist but simpler).
+  Include endpoints for:
+  - Creating, reading, updating, deleting tasks
+  - Marking tasks complete
+  - Filtering and searching
+
+  Provide OpenAPI/Swagger style documentation for at least 4 endpoints.
+
+difficulty: medium
+category: coding
+expected_output: Clear API specification with methods, routes, and examples
+validation:
+  type: ai_judge
+time_limit_minutes: 15

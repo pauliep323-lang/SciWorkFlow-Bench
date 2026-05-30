@@ -1,0 +1,20 @@
+id: task_002
+title: "Codon Optimization for Heterologous Protein Expression"
+description: |
+  You are a synthetic biologist. Optimize the DNA sequence for expressing a human protein (insulin) in E. coli. 
+  The original human cDNA has poor expression due to codon bias.
+
+  Provide:
+  1. The strategy you would use for codon optimization
+  2. Key tools or resources you would use
+  3. Potential risks and how to mitigate them
+
+difficulty: medium
+category: biology
+expected_output: Clear strategy with reasoning and tools
+hints:
+  - Use E. coli codon tables
+  - Consider secondary structure and rare codons
+validation:
+  type: ai_judge
+time_limit_minutes: 12

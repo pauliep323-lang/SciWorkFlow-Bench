@@ -1,0 +1,17 @@
+id: task_009
+title: "Directed Evolution Experiment Design"
+description: |
+  Design a directed evolution experiment to improve the thermostability of an enzyme (e.g., a lipase) for use in industrial detergents.
+  
+  Provide:
+  1. Library generation method
+  2. Screening/selection strategy
+  3. How many rounds you would run
+  4. Expected challenges and how to overcome them
+
+difficulty: hard
+category: biology
+expected_output: Detailed experimental design with reasoning
+validation:
+  type: ai_judge
+time_limit_minutes: 15

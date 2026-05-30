@@ -1,0 +1,16 @@
+# Benchmark Task Schema for HelixAI Research Challenges
+version: 1.0
+
+task:
+  id: string                  # unique identifier
+  title: string
+  description: string         # detailed task description
+  difficulty: easy | medium | hard
+  category: biology | chemistry | physics | coding | math | general
+  expected_output: string     # what the correct answer should look like
+  hints: 
+    - string
+  validation:
+    type: exact | contains | regex | ai_judge
+    answer: string
+  time_limit_minutes: number
