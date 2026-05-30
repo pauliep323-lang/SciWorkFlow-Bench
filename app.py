@@ -3,25 +3,12 @@ from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 import uvicorn
 from loader import BenchmarkLoader
-import os
-from dotenv import load_dotenv
-
-load_dotenv()
 
 app = FastAPI(title="SciWorkFlow Benchmark")
 
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 loader = BenchmarkLoader()
-
-# Lazy load Grok only when needed
-def get_llm():
-    from langchain_xai import ChatXAI
-    from langchain_core.messages import HumanMessage
-    key = os.getenv("XAI_API_KEY")
-    if not key:
-        return None
-    return ChatXAI(model="grok-3", api_key=key, temperature=0.7)
 
 @app.get("/")
 async def home():
@@ -43,7 +30,7 @@ async def home():
     <body>
         <img src="/static/logo.png" alt="SciWorkFlow" class="logo">
         <h1>SciWorkFlow Benchmark</h1>
-        <p class="subtitle">High-Quality AI Research Challenges</p>
+        <p class="subtitle">High-Quality AI Research Challenges • 10 Tasks Loaded</p>
     """
 
     for task in loader.tasks:
@@ -51,7 +38,7 @@ async def home():
         <div class="task">
             <strong style="font-size:1.3em;">{task['title']}</strong><br>
             <small style="color:#64748b;">Difficulty: {task['difficulty'].upper()} • Category: {task['category']}</small><br><br>
-            <button onclick="alert('Selected: {task['title']}')">Run This Task</button>
+            <button onclick="alert('✅ Task selected: {task['title']}\\n\\nThis is a demo. Full grading coming soon.')">Run This Task</button>
         </div>
         """
     
