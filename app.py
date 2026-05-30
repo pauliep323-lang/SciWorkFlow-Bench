@@ -3,12 +3,25 @@ from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 import uvicorn
 from loader import BenchmarkLoader
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 app = FastAPI(title="SciWorkFlow Benchmark")
 
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 loader = BenchmarkLoader()
+
+# Lazy load Grok only when needed
+def get_llm():
+    from langchain_xai import ChatXAI
+    from langchain_core.messages import HumanMessage
+    key = os.getenv("XAI_API_KEY")
+    if not key:
+        return None
+    return ChatXAI(model="grok-3", api_key=key, temperature=0.7)
 
 @app.get("/")
 async def home():
