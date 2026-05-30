@@ -30,7 +30,7 @@ async def home():
     <body>
         <img src="/static/logo.png" alt="SciWorkFlow" class="logo">
         <h1>SciWorkFlow Benchmark</h1>
-        <p class="subtitle">High-Quality AI Research Challenges • 10 Tasks Loaded</p>
+        <p class="subtitle">High-Quality AI Research Challenges</p>
     """
 
     for task in loader.tasks:
@@ -38,7 +38,7 @@ async def home():
         <div class="task">
             <strong style="font-size:1.3em;">{task['title']}</strong><br>
             <small style="color:#64748b;">Difficulty: {task['difficulty'].upper()} • Category: {task['category']}</small><br><br>
-            <button onclick="alert('✅ Task selected: {task['title']}\\n\\nThis is a demo. Full grading coming soon.')">Run This Task</button>
+            <button onclick="alert('Task selected: {task['title']}\\n\\nFull Grok grading coming soon!')">Run This Task</button>
         </div>
         """
     
