@@ -38,7 +38,7 @@ async def home():
         <div class="task">
             <strong style="font-size:1.3em;">{task['title']}</strong><br>
             <small style="color:#64748b;">Difficulty: {task['difficulty'].upper()} • Category: {task['category']}</small><br><br>
-            <button onclick="alert('Task selected: {task['title']}\\n\\nFull Grok grading coming soon!')">Run This Task</button>
+            <button onclick="alert('Task selected: {task['title']}\\n\\nFull Grok grading coming very soon!')">Run This Task</button>
         </div>
         """
     
